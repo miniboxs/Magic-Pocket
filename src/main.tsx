@@ -6,6 +6,6 @@ export default function (c: Context) {
     if (!source) {
         return c.text('我的发，Excuse me baby，你丢失了source：["ft","sd"]')
     } else {
-        return c.html(<Page source={source} />)
+        return c.html(<Page source={source.trim()} />)
     }
 }
